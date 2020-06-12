@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik Kumar</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/e26494b487.js" crossorigin="anonymous"></script>
+
+<!-- JS, Popper.js, and jQuery -->
+</head>
+<body>
+    <!-- <div class="container-fluid"> -->
+        <div id="mySidenav" class="sidenav">
+            <div class="sidenav-menu">
+                <ul class="navbar-nav navbar-style-two">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidenav-footer">
+                <a class="btn btn-primary" href="#contact">HIRE ME</a>
+                <ul class="social my-5">
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                <ul>
+            </div>
+            <button id="nav-button" class="btn btn-info btn-sm" onclick="toggleNav()"><i id="nav-open-close" class="fas fa-arrow-left"></i></button>
+        </div>
+        
+        <!-- Use any element to open the sidenav -->
+        <!-- <span id="nav-button" onclick="toggleNav"><i class="fas fa-arrow-left"></i></span> -->
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div id="main">
+            <section id="home">
+                <div class="main-banner">
+                    <div class="container">
+                        <div class="main-banner-container">
+                            <span class="sub-title">Hello, I am</span>
+                            <h1>Ritik Kumar</h1>
+                            <h3>
+                                I am a 
+                                <span class="typewrite" data-period="2000" data-type='[ "Coder", "Web Developer", "Content Writer", "Bloger", "Reader" ]'>
+                                    <span class="wrap"></span>
+                                </span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <div class="container pt-100">
+                    <div class="section-title">
+                        <span class="sub-title">About Me</span>
+                        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+                    <div class="about-content align-items-center">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Id dolores quaerat expedita explicabo maiores ducimus atque inventore, quasi architecto? 
+                            Nesciunt, sint? Asperiores blanditiis laudantium voluptatum quaerat odit corporis porro itaque 
+                            dignissimos quod autem, quasi rerum, id, optio reiciendis mollitia natus numquam maiores hic qui? 
+                            Fuga dolor sint minima dolores aliquam!
+                        </p>
+                        <ul class="nav nav-tabs mt-3 justify-content-around">
+                            <li class="nav-item">
+                                <a href="#skills" class="nav-link active" data-toggle="tab">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#education" class="nav-link" data-toggle="tab">Education</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content pb-4">
+                            <div id="skills" class="tab-pane fade show active pt-4">
+                                <ul>
+                                    <li class="skill-card hoverable">C++</li>
+                                    <li class="skill-card hoverable">C</li>
+                                    <li class="skill-card hoverable">Python</li>
+                                    <li class="skill-card hoverable">HTML</li>
+                                    <li class="skill-card hoverable">CSS</li>
+                                    <li class="skill-card hoverable">JavaScript</li>
+                                    <li class="skill-card hoverable">jQuery</li>
+                                    <li class="skill-card hoverable">Bootstrap</li>
+                                    <li class="skill-card hoverable">Angular</li>
+                                    <li class="skill-card hoverable">Node.js</li>
+                                    <li class="skill-card hoverable">GIT</li>
+                                    <li class="skill-card hoverable">Github</li>
+                                </ul>
+                            </div>
+                            <div id="education" class="tab-pane fade pt-4">
+                                <div class="education-area">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="education-block">
+                                                <span>2019 - Present (B.Tech)</span>
+                                                <h3>Vellore Institue of Technology, Vellore</h3>
+                                                <p>Sophomore, majoring in Computer Science and Engineering with specialization is Information Security with current CGPA of 9.30. 
+                                                    Keen interest in web technologies and actively looking to participate in hackathons to improve my thinking and development skills.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="education-block">
+                                                <span>2016 - 2018 (12th Standard)</span>
+                                                <h3>D.A.V. Public School Hehal, Ranchi</h3>
+                                                <p>Achieved 90.8% in All India Senior Secondary Certificate Examination with 92% aggregate in Physics, Chemistry and Math.
+                                                    Actively participated in science exhibitions and writing competitions.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <div class="container pt-100">
+                    <div class="section-title">
+                        <span class="sub-title">Portfolio</span>
+                        <h2>Some of my Projects</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="single-project-box">
+                                <h3>Color Guessing Game</h3>
+                                <span>HTML, CSS, JS</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, velit recusandae fugit totam reiciendis ipsum, doloribus, nisi optio sapiente deleniti beatae deserunt? Vitae ex quasi reiciendis similique maxime ullam quos!</p>
+                                <div class="project-links d-flex flex-row justify-content-between">
+                                    <a href="">Demo</a>
+                                    <a href="">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="single-project-box">
+                                <h3>Yelp Camp</h3>
+                                <span>Node.js</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, velit recusandae fugit totam reiciendis ipsum, doloribus, nisi optio sapiente deleniti beatae deserunt? Vitae ex quasi reiciendis similique maxime ullam quos!</p>
+                                <div class="project-links d-flex flex-row justify-content-between">
+                                    <a href="">Demo</a>
+                                    <a href="">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hire-me">
+                <div class="container pt-100">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-md-12">
+                            <span class="sub-title">Do you have any Work?</span>
+                            <h2>I am Available for Freelance Projects!</h2>
+                        </div>
+                        <div class="col-lg-5 col-md-12 d-flex justify-content-end">
+                            <div class="hire-me-button">
+                                <a class="btn btn-primary" href="#contact">HIRE ME</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog">
+                <div class="container pt-100">
+                    <div class="section-title">
+                        <span class="sub-title">Blogs</span>
+                        <h2>Being the Writer</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="single-blog-post">
+                                <div class="blog-image">
+                                    <a href="https://ritikkumar.home.blog/2020/05/30/8-things-to-do-to-stay-positive/" target="_blank">
+                                        <img class="img-fluid" src="https://ritikkumarhome.files.wordpress.com/2020/05/stay-positive-1.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <span class="blog-topic">Tips / Self-Help</span>
+                                    <h4>8 Things to do to Stay Positive...</h4>
+                                    <span class="date">30 May 2020</span>
+                                    <a href="https://ritikkumar.home.blog/2020/05/30/8-things-to-do-to-stay-positive/" class="blog-link" target="_blank"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="single-blog-post">
+                                <div class="blog-image">
+                                    <a href="https://ritikkumar.home.blog/2020/02/01/how-i-failed-myself-part-2-and-what-i-learned/" target="_blank">
+                                        <img class="img-fluid" src="https://ritikkumarhome.files.wordpress.com/2020/02/success-190926-800x450-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <span class="blog-topic">My Experiences</span>
+                                    <h4>How I failed Myself (Part 2)... And what I Learned</h4>
+                                    <span class="date">1 Feb 2020</span>
+                                    <a href="https://ritikkumar.home.blog/2020/02/01/how-i-failed-myself-part-2-and-what-i-learned/" class="blog-link" target="_blank"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xs-12">
+                            <div class="single-blog-post">
+                                <div class="blog-image">
+                                    <a href="https://ritikkumar.home.blog/2020/01/29/how-i-failed-myself-part-1/" target="_blank">
+                                        <img class="img-fluid" src="https://ritikkumarhome.files.wordpress.com/2020/01/trh_learning_from_failure_artwork_wide-6e05fadc9dcb11c842ac481903440f9f4b31c8f5-s800-c85.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-content">
+                                    <span class="blog-topic">My Experiences</span>
+                                    <h4>How I failed Myself (Part 1)</h4>
+                                    <span class="date">29 Jan 2020</span>
+                                    <a href="https://ritikkumar.home.blog/2020/01/29/how-i-failed-myself-part-1/" class="blog-link" target="_blank"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="read-more-button">
+                        <button class="btn btn-primary">Read More Articles</button>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+        
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</body>
+</html>

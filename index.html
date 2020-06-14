@@ -6,14 +6,17 @@
     <title>Ritik Kumar</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="https://kit.fontawesome.com/e26494b487.js" crossorigin="anonymous"></script>
-
-<!-- JS, Popper.js, and jQuery -->
 </head>
 <body>
     <!-- <div class="container-fluid"> -->
         <div id="mySidenav" class="sidenav">
+            <div id="hamburger-menu">
+                <span><i id="ham-menu" class="fa fa-bars"></i></span>
+            </div>
             <div class="sidenav-menu">
                 <ul class="navbar-nav navbar-style-two">
                     <li class="nav-item">
@@ -34,15 +37,15 @@
                 </ul>
             </div>
             <div class="sidenav-footer">
-                <a class="btn btn-primary" href="#contact">HIRE ME</a>
+                <a class="primary" href="#contact">HIRE ME</a>
                 <ul class="social my-5">
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/imritikkr/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/iamr_kumar/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ritik-kumar-bba915187/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/iamr-kumar" target="_blank"><i class="fab fa-github"></i></a></li>
                 <ul>
             </div>
-            <button id="nav-button" class="btn btn-info btn-sm" onclick="toggleNav()"><i id="nav-open-close" class="fas fa-arrow-left"></i></button>
+            <!-- <button id="nav-button" class="btn btn-info btn-sm" onclick="toggleNav()"><i id="nav-open-close" class="fas fa-arrow-left"></i></button> -->
         </div>
         
         <!-- Use any element to open the sidenav -->
@@ -70,10 +73,10 @@
             <section id="about">
                 <div class="container pt-100">
                     <div class="section-title">
-                        <span class="sub-title">About Me</span>
-                        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                        <span class="sub-title wow slideInUp">About Me</span>
+                        <h2 class="wow fadeInUp">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
                     </div>
-                    <div class="about-content align-items-center">
+                    <div class="about-content align-items-center wow fadeInUp">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Id dolores quaerat expedita explicabo maiores ducimus atque inventore, quasi architecto? 
@@ -81,7 +84,7 @@
                             dignissimos quod autem, quasi rerum, id, optio reiciendis mollitia natus numquam maiores hic qui? 
                             Fuga dolor sint minima dolores aliquam!
                         </p>
-                        <ul class="nav nav-tabs mt-3 justify-content-around">
+                        <ul class="nav nav-tabs mt-3 justify-content-around wow zoomIn">
                             <li class="nav-item">
                                 <a href="#skills" class="nav-link active" data-toggle="tab">Skills</a>
                             </li>
@@ -91,7 +94,7 @@
                         </ul>
 
                         <div class="tab-content pb-4">
-                            <div id="skills" class="tab-pane fade show active pt-4">
+                            <div id="skills" class="tab-pane fade show active pt-4 wow slideInUp">
                                 <ul>
                                     <li class="skill-card hoverable">C++</li>
                                     <li class="skill-card hoverable">C</li>
@@ -109,7 +112,7 @@
                             </div>
                             <div id="education" class="tab-pane fade pt-4">
                                 <div class="education-area">
-                                    <div class="row">
+                                    <div class="row animate__animated animate__fadeIn">
                                         <div class="col-sm-12">
                                             <div class="education-block">
                                                 <span>2019 - Present (B.Tech)</span>
@@ -140,29 +143,29 @@
             <section id="portfolio">
                 <div class="container pt-100">
                     <div class="section-title">
-                        <span class="sub-title">Portfolio</span>
-                        <h2>Some of my Projects</h2>
+                        <span class="sub-title wow slideInUp">Portfolio</span>
+                        <h2 class="wow fadeInUp">Some of my Projects</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <div class="single-project-box">
+                            <div class="single-project-box wow slideInLeft">
                                 <h3>Color Guessing Game</h3>
                                 <span>HTML, CSS, JS</span>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, velit recusandae fugit totam reiciendis ipsum, doloribus, nisi optio sapiente deleniti beatae deserunt? Vitae ex quasi reiciendis similique maxime ullam quos!</p>
                                 <div class="project-links d-flex flex-row justify-content-between">
-                                    <a href="">Demo</a>
-                                    <a href="">Github</a>
+                                    <a href="http://color-game-project.s3-website.ap-south-1.amazonaws.com" target="_blank">Demo</a>
+                                    <a href="https://github.com/iamr-kumar/Color-Guessing-Game" target="_blank">Github</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 wow slideInRight">
                             <div class="single-project-box">
                                 <h3>Yelp Camp</h3>
                                 <span>Node.js</span>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, velit recusandae fugit totam reiciendis ipsum, doloribus, nisi optio sapiente deleniti beatae deserunt? Vitae ex quasi reiciendis similique maxime ullam quos!</p>
                                 <div class="project-links d-flex flex-row justify-content-between">
-                                    <a href="">Demo</a>
-                                    <a href="">Github</a>
+                                    <a href="https://mysterious-castle-83830.herokuapp.com/" target="_blank">Demo</a>
+                                    <a href="https://github.com/iamr-kumar/Yelp-Camp-Practice" target="_blank">Github</a>
                                 </div>
                             </div>
                         </div>
@@ -174,12 +177,12 @@
                 <div class="container pt-100">
                     <div class="row align-items-center">
                         <div class="col-lg-7 col-md-12">
-                            <span class="sub-title">Do you have any Work?</span>
-                            <h2>I am Available for Freelance Projects!</h2>
+                            <span class="sub-title wow fadeInDown">Do you have any Work?</span>
+                            <h2 class="wow fadeInUp">I am Available for Freelance Projects!</h2>
                         </div>
                         <div class="col-lg-5 col-md-12 d-flex justify-content-end">
                             <div class="hire-me-button">
-                                <a class="btn btn-primary" href="#contact">HIRE ME</a>
+                                <a class="primary wow fadeInRight" href="#contact">HIRE ME</a>
                             </div>
                         </div>
                     </div>
@@ -189,11 +192,11 @@
             <section id="blog">
                 <div class="container pt-100">
                     <div class="section-title">
-                        <span class="sub-title">Blogs</span>
-                        <h2>Being the Writer</h2>
+                        <span class="sub-title wow slideInUp">Blogs</span>
+                        <h2 class="wow fadeInUp">Being the Writer</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12 wow fadeIn">
                             <div class="single-blog-post">
                                 <div class="blog-image">
                                     <a href="https://ritikkumar.home.blog/2020/05/30/8-things-to-do-to-stay-positive/" target="_blank">
@@ -208,7 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12 wow fadeIn">
                             <div class="single-blog-post">
                                 <div class="blog-image">
                                     <a href="https://ritikkumar.home.blog/2020/02/01/how-i-failed-myself-part-2-and-what-i-learned/" target="_blank">
@@ -223,7 +226,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-xs-12">
+                        <div class="col-lg-6 col-xs-12 wow fadeIn">
                             <div class="single-blog-post">
                                 <div class="blog-image">
                                     <a href="https://ritikkumar.home.blog/2020/01/29/how-i-failed-myself-part-1/" target="_blank">
@@ -239,8 +242,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="read-more-button">
-                        <button class="btn btn-primary">Read More Articles</button>
+                    <div class="read-more-button wow fadeInUp">
+                        <button class="primary">Read More Articles</button>
                     </div>
                 </div>
             </section>
@@ -252,7 +255,7 @@
                             <div class="contact-content">
                                 <div class="d-table">
                                     <div class="d-table-cell">
-                                        <div class="section-title">
+                                        <div class="section-title wow fadeIn">
                                             <span class="sub-title">Got Something?</span>
                                             <h2>Send Me a Message</h2>
                                         </div>
@@ -262,33 +265,40 @@
                         </div>
                         <div class="col-lg-7 col-xs-12">
                             <div class="contact-form">
-                                <form action="" id="contactForm">
+                                <form action="https://script.google.com/macros/s/AKfycbydACvVfjkEVVdbGeQ1q1kfbGu1fafStbeGzeAOPw/exec" id="contactForm" method="POST" class="gform">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter your name">
+                                        <input type="text" class="form-control wow fadeIn" name="name" placeholder="Enter your name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter your email">
+                                        <input type="text" class="form-control wow fadeIn" name="email" placeholder="Enter your email">
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Enter your message"></textarea>
+                                        <textarea name="message" id="message" cols="30" rows="5" class="form-control wow fadeIn" placeholder="Enter your message"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-primary">Send Message</button>
+                                        <button class="primary wow fadeInUp">Send Message</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
+                    <div class="back-to-top">
+                        <a href="#home"><i class="fa fa-arrow-up"></i></a>
+                    </div>
                 </div>
             </section>
         
         </div>
-        
-
-    <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

@@ -48,9 +48,6 @@
             <!-- <button id="nav-button" class="btn btn-info btn-sm" onclick="toggleNav()"><i id="nav-open-close" class="fas fa-arrow-left"></i></button> -->
         </div>
         
-        <!-- Use any element to open the sidenav -->
-        <!-- <span id="nav-button" onclick="toggleNav"><i class="fas fa-arrow-left"></i></span> -->
-        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
         <div id="main">
             <section id="home">
                 <div class="main-banner">
@@ -74,15 +71,14 @@
                 <div class="container pt-100">
                     <div class="section-title">
                         <span class="sub-title wow slideInUp">About Me</span>
-                        <h2 class="wow fadeInUp">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                        <h2 class="wow fadeInUp">"We are who are for a lot of reasons, and we will never know most of them"</h2>
                     </div>
                     <div class="about-content align-items-center wow fadeInUp">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Id dolores quaerat expedita explicabo maiores ducimus atque inventore, quasi architecto? 
-                            Nesciunt, sint? Asperiores blanditiis laudantium voluptatum quaerat odit corporis porro itaque 
-                            dignissimos quod autem, quasi rerum, id, optio reiciendis mollitia natus numquam maiores hic qui? 
-                            Fuga dolor sint minima dolores aliquam!
+                            I am a writer by heart and programmer by choice. Currently pursuing B.Tech in Computer Science Sepcialization in Information
+                            Security, I intend to develop excellent development skills to contribute to the tech world in the best of my
+                            ability. With active interest in web technologies and programing, I seek to learn and implement new technologiee
+                            for many great things.
                         </p>
                         <ul class="nav nav-tabs mt-3 justify-content-around wow zoomIn">
                             <li class="nav-item">
@@ -108,6 +104,7 @@
                                     <li class="skill-card hoverable">Node.js</li>
                                     <li class="skill-card hoverable">GIT</li>
                                     <li class="skill-card hoverable">Github</li>
+                                    <li class="skill-card hoverable">Content Writing</li>
                                 </ul>
                             </div>
                             <div id="education" class="tab-pane fade pt-4">
@@ -130,6 +127,15 @@
                                                 </p>
                                             </div>
                                         </div>
+                                        <div class="col-sm-12">
+                                            <div class="education-block">
+                                                <span>2009 - 2016 (10th Standard)</span>
+                                                <h3>D.A.V. Public School Hehal, Ranchi</h3>
+                                                <p>Achieved 10 CGPA in All India Secondary School Examination.
+                                                    Been active speaker at various events.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -147,22 +153,26 @@
                         <h2 class="wow fadeInUp">Some of my Projects</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 d-flex align-items-stretch">
                             <div class="single-project-box wow slideInLeft">
                                 <h3>Color Guessing Game</h3>
                                 <span>HTML, CSS, JS</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, velit recusandae fugit totam reiciendis ipsum, doloribus, nisi optio sapiente deleniti beatae deserunt? Vitae ex quasi reiciendis similique maxime ullam quos!</p>
+                                <p>A simple game of guessing the color based on the rgb values. Built purely using HTML, CSS and JS,
+                                    this responsive web-page is one of my firt attempts at front end web development.
+                                </p>
                                 <div class="project-links d-flex flex-row justify-content-between">
                                     <a href="http://color-game-project.s3-website.ap-south-1.amazonaws.com" target="_blank">Demo</a>
                                     <a href="https://github.com/iamr-kumar/Color-Guessing-Game" target="_blank">Github</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 wow slideInRight">
-                            <div class="single-project-box">
+                        <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="single-project-box wow slideInRight">
                                 <h3>Yelp Camp</h3>
                                 <span>Node.js</span>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, velit recusandae fugit totam reiciendis ipsum, doloribus, nisi optio sapiente deleniti beatae deserunt? Vitae ex quasi reiciendis similique maxime ullam quos!</p>
+                                <p>An application to exlore camping sites. Built using Node.js and MongoDB, this application lets user login or signup,
+                                    add, edit and remove the campgrounds after authorization.
+                                </p>
                                 <div class="project-links d-flex flex-row justify-content-between">
                                     <a href="https://mysterious-castle-83830.herokuapp.com/" target="_blank">Demo</a>
                                     <a href="https://github.com/iamr-kumar/Yelp-Camp-Practice" target="_blank">Github</a>
@@ -267,22 +277,22 @@
                             <div class="contact-form">
                                 <form action="https://script.google.com/macros/s/AKfycbydACvVfjkEVVdbGeQ1q1kfbGu1fafStbeGzeAOPw/exec" id="contactForm" method="POST" class="gform">
                                     <div class="form-group">
-                                        <input type="text" class="form-control wow fadeIn" name="name" placeholder="Enter your name" required>
+                                        <input type="text" class="form-control wow fadeIn" id="name" name="name" placeholder="Enter your name" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control wow fadeIn" name="email" placeholder="Enter your email required" required>
+                                        <input type="email" class="form-control wow fadeIn" id="email" name="email" placeholder="Enter your email required" required>
                                     </div>
                                     <div class="form-group">
                                         <textarea name="message" id="message" cols="30" rows="5" class="form-control wow fadeIn" placeholder="Enter your message" required></textarea>
                                     </div>
                                     <div class="form-group">
                                         <button id="send-message" class="primary wow fadeInUp">Send Message</button>
+                                        <div id="sent-message" class="mt-3">
+                                            <h4>Message Sent!</h4>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
-                            <!-- <div id="thank-you-message">
-                                <h3>Thank you! I will surely get back to you.</h3>
-                            </div> -->
                         </div>
                     </div>
                 </div>

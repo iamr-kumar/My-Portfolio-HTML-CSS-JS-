@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -117,7 +119,7 @@ h2{
   top: 250px;
 }
 
-.primary, .primary:focus{
+.primary{
   background-color: #0f1d22;
   border: 1px solid #c9ab81;
   color: #fff;
@@ -202,12 +204,16 @@ h2{
   height: 100vh;
   position: relative;
   z-index: 1;
-  background-image: url(https://images.unsplash.com/photo-1524110405815-40f8cb1bf14d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(../assets/img3.jpeg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
+  opacity: 0.8;
 }
 
 .main-banner .main-banner-container{
@@ -222,13 +228,14 @@ h2{
 
 .main-banner .main-banner-container .sub-title{
   display: block;
+  color: #c9ab81;
   font-size: 1.5rem;
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .main-banner .main-banner-container h1{
-  font-family: 'Mrs Saint Delafield', cursive ;
+  font-family: 'Playfair Display', cursive ;
   line-height: 1;
   font-weight: 500;
   font-size: 9rem;
@@ -523,9 +530,13 @@ h2{
 }
 
 #contact .contact-content{
-  background-image: url("https://images.unsplash.com/photo-1504270997636-07ddfbd48945?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(../assets/img1.jfif);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 20%;
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -550,7 +561,7 @@ h2{
 }
 
 #contact .section-title h2{
-  color: #060f11
+  color: #fff
 }
 
 #contact .contact-form{
@@ -589,10 +600,13 @@ h2{
   text-align: center;
 }
 
-#thank-you-message h3{
-  font-family: 'Playfair Display';
-  font-weight: 600;
+#sent-message{
+  display: none;
+}
+
+#sent-message h4{
   color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 
 .back-to-top{
@@ -649,6 +663,11 @@ h2{
     margin-left: 0;
     width: 100%;
   }
+
+  .main-banner{
+    background-position: center;
+  }
+
   .main-banner-container .sub-title{
     font-size: 1.2em;
   }
@@ -675,6 +694,14 @@ h2{
 
   #portfolio .col-lg-6{
     padding-right: 0;
+  }
+
+  .single-project-box .project-links a{
+    color: #c9ab81;
+  }
+
+  .single-project-box .project-links a::after{
+    content: "";
   }
 
   #hire-me .row{

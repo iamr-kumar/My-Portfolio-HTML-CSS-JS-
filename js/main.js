@@ -99,11 +99,14 @@ $(document).ready(function () {
     $('.sidenav').addClass('show-on-bigscreen');
   }
 
-  // $("#send-message").on("click", () => {
-  //   $('.contact-form').each(() => {
-  //     $('input').val("");
-  //   });
-  // });
+  $("#send-message").on("click", () => {
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var message = $('#message').val();
+    if(name && email && message && email.includes("@")){
+      $('#sent-message').css("display","block");
+    }
+  });
 
 });
 

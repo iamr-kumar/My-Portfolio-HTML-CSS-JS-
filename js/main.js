@@ -60,10 +60,11 @@ $(document).ready(function () {
   $(document).on("scroll", onScroll);
   
   //smoothscroll
-  $('#mySidenav a, .back-to-top a').on('click', function (e) {
+  $('#mySidenav .nav-link, #hire-button, .back-to-top a').on('click', function (e) {
       e.preventDefault();
       $(document).off("scroll");
-      
+
+
       $('a').each(function () {
           $(this).removeClass('active');
       })
@@ -80,6 +81,12 @@ $(document).ready(function () {
       });
   });
 
+  $('#mySidenav .nav-link').on("click", () => {
+    $('.sidenav').removeClass('show-on-smallscreen');
+    $('#ham-menu').toggleClass('fa-times');
+    $('#ham-menu').toggleClass('fa-bars');
+  });
+
   $('#hamburger-menu').on('click', () => {
     $('.sidenav').toggleClass('show-on-smallscreen');
     $('#ham-menu').toggleClass('fa-times');
@@ -92,8 +99,10 @@ $(document).ready(function () {
     $('.sidenav').addClass('show-on-bigscreen');
   }
 
-  // $('.btn').on('click', () => {
-  //   this.addClass('btn-primary');
+  // $("#send-message").on("click", () => {
+  //   $('.contact-form').each(() => {
+  //     $('input').val("");
+  //   });
   // });
 
 });

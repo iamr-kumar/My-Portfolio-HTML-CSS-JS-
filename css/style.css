@@ -356,7 +356,15 @@ h2{
   cursor: default;
   font-size: 1.2em;
   padding: 5px 10px;
+  cursor: pointer;
+  transition: all ease-in-out;
 }
+
+#skills li:hover{
+    transform: scale(1.2);
+}
+
+
 
 #education .education-block{
   margin-bottom: 25px;

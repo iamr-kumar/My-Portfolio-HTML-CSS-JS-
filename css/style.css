@@ -611,11 +611,17 @@ h2 {
   text-align: center;
 }
 
-#sent-message {
+#success-message,
+#error-message {
   display: none;
 }
 
-#sent-message h4 {
+.display-message {
+  display: block;
+}
+
+#success-message,
+#error-message h4 {
   color: #fff;
   font-family: "Playfair Display", serif;
 }

@@ -144,8 +144,9 @@ h2 {
 }
 
 .sidenav-footer .social li a {
-  color: #4a4a4b;
+  color: #535353;
   font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .sidenav-footer .social li a:hover {
@@ -198,7 +199,7 @@ h2 {
   position: relative;
   z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/img3.jpeg);
+    url(../assets/cover.jpeg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
